@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- BOOTSTRAP ICONS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="src/index.css">
+<title>PORTFOLIO | DAVID FERNANDES</title>
+</head>
+<body class="bgBlack">
+<div class="flex">
+  <div class="followerDiv">
+    <div id="follower"></div>
+  </div>
+  <div id="root"></div>
+</div>
+<script type="module" src="/src/index.tsx"></script>
+<script type="module">
+  document.addEventListener("DOMContentLoaded", function() {
+    const follower = document.getElementById("follower")
+
+    document.addEventListener("mousemove", function(event) {
+      const mouseY = event.clientY
+      if (mouseY == 0) {
+        follower.classList.add("hide")
+      } else {
+         follower.classList.remove("hide")
+        follower.style.top = ( mouseY - 140 ) + "px"
+      }
+    })
+
+    document.addEventListener("scroll", function() {
+      follower.classList.add("hide")
+    })
+  })
+</script>
+</body>
+</html>

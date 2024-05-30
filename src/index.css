@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.iconAnimation:hover {
+  color: white;
+  padding-bottom: 1rem;
+  transition: 0.3s ease;
+}
+
+.cardAnimation:hover {
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  transition: 0.4s ease;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.followerDiv {
+  min-height: 100%;
+  width: 3px;
+  background-color: black;
+  z-index: 2;
+}
+
+#follower {
+  position: absolute;
+  width: 1px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(146,0,255,1) 17%, rgba(0,0,0,1) 100%);
+  z-index: 2;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.blur {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
+.bgBlack {
+  background-color: black;
+}
+
+.hoverBtn:hover {
+  background-color: black;
+  color: white;
+  transition: ease 0.3s;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.shaking-img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.shaking-img:hover {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+      transform: translateX(2px);
+  }
+}
