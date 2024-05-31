@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
 <!-- BOOTSTRAP ICONS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="src/index.css">
@@ -23,7 +24,8 @@
 
     document.addEventListener("mousemove", function(event) {
       const mouseY = event.clientY
-      if (mouseY == 0) {
+      console.log(mouseY)
+      if (mouseY <= 0) {
         follower.classList.add("hide")
       } else {
          follower.classList.remove("hide")
@@ -34,7 +36,19 @@
     document.addEventListener("scroll", function() {
       follower.classList.add("hide")
     })
+
+    document.addEventListener('mouseleave', function(event) {
+      follower.classList.add("hide")
+    });
   })
+
+  window.addEventListener("load", function() {
+    document.body.classList.add("loaded");
+  });
+
+  window.addEventListener('load', function() {
+    window.scrollTo(0, 0);
+  });
 </script>
 </body>
 </html>

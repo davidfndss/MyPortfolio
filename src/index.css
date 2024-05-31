@@ -95,3 +95,12 @@
       transform: translateX(2px);
   }
 }
+
+body {
+  display: none; 
+  background-color: blue;
+}
+body.loaded {
+  display: block; 
+  background-color: white; 
+}
