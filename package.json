@@ -1,4 +1,5 @@
 {
+  "homepage": "https://davidfndss.github.io/my-portfolio",
   "name": "react-typescript",
   "version": "1.0.0",
   "type": "module",
@@ -6,21 +7,25 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.14.2",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.4.3",
-    "typescript": "^4.7.4",
+    "typescript": "^4.9.5",
     "vite": "^3.0.4"
   },
   "dependencies": {
