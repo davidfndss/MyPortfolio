@@ -24,8 +24,8 @@ const Card: React.FC<CardProps> = ({title, description, link, tags}) => {
     const languageArray = language == "pt-br" ? ptBrArray : enUsArray  
   
   return (
-    <div className="w-[90%] text-center border border-2 border-zinc-800 p-4 rounded bg-zinc-900 flex flex-col items-center font-antom cardAnimation m-auto md:w-full">
-      <img className="rounded" src="/img/notebookncellphonemock.jpg"></img>
+    <div className="w-[90%] text-center border border-2 border-zinc-850 p-4 rounded bg-zinc-900 flex flex-col items-center font-antom cardAnimation m-auto md:w-full">
+      <img className="rounded" src="src/assets/img/notebookncellphonemock.jpg"></img>
       <h1 className="p-2 text-xl sm:text-2xl font-monserrat font-bold">{title}</h1>
       <p className="text-sm sm:text-md">{description} </p>  
       {

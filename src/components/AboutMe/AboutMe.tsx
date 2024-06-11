@@ -20,7 +20,7 @@ const AboutMe: React.FC = () => {
       <h1 className="p-4 text-2xl">{languageArray[0]}</h1>
 
       <div className="max-w-[204px] max-h-[204px]">
-        <img src="/img/me.png" className="w-[200px] w-[200px] rounded-full mb-4 shadow-xl"></img>
+        <img src="src/assets/img/me.png" className="w-[200px] w-[200px] rounded-full mb-4 shadow-xl"></img>
 
         <h2 className="p-3 bg-zinc-800 rounded-xl inline relative top-[-50px] shadow-xl right-[-30px]">{languageArray[5]} <i className="bi bi-toggle-on text-green-500"></i></h2>
         <i className="bi bi-globe-americas p-2 bg-zinc-800 rounded-xl relative top-[-140px] left-[28px] text-3xl shadow-xl text-blue-500"></i>  

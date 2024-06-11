@@ -14,9 +14,9 @@ const Projects: React.FC = () => {
   return (
       <section className="bg-black text-white p-10 min-h-screen flex flex-col items-center justify-center">
         <div className="py-2 sticky top-0 mt-6 flex justify-center items-center bg-black w-full text-white shadow-md mb-4" style={{zIndex: 2}}>
-          <img src="/img/icons/knight-white.png" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"></img>
+          <img src="src/assets/img/icons/knight-white.png" className="h-[25px] w-[25px] sm:h-[30px] sm:w-[30px]"></img>
           <h1 className="font-bold text-xl text-center min-w-[200px] sm:text-3xl">{languageArray[0]}</h1>
-          <img src="/img/icons/knight-white.png" className="flip-h h-[25px] w-[25px] mr-1 sm:h-[30px] sm:w-[30px]" style={{transform: "scaleX(-1)"}}></img>
+          <img src="src/assets/img/icons/knight-white.png" className="flip-h h-[25px] w-[25px] mr-1 sm:h-[30px] sm:w-[30px]" style={{transform: "scaleX(-1)"}}></img>
         </div>
         
         <article className="grid justify-center items-center gap-5 md:grid-cols-3">

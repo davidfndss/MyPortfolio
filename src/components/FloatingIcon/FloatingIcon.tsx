@@ -19,7 +19,7 @@ const FloatingIcon: React.FC<FloatingProps> = ({name, top, right, bottom, left, 
         left: left,
       }
     }>
-      <img src={`/img/icons/${name}.png`} className="w-[50px] h-[50px] blur lg:w-[70px] lg:h-[70px]" style={{
+      <img src={`src/assets/img/icons/${name}.png`} className="w-[50px] h-[50px] blur lg:w-[70px] lg:h-[70px]" style={{
       transform: `rotate(${rotate})`
       }}></img>
     </div>

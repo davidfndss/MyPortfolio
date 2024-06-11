@@ -10,7 +10,7 @@ const LanguageSwapBtn: React.FC = () => {
 
       <div className="absolute top-5 right-1 grayscale hover:grayscale-0">
         <button className=" rounded-full p-1">
-          <img src="/img/flags/USA-flag.png" className="h-[30px] w-[30px]" onClick={() => setLanguage("en-us")}></img>
+          <img src="src/assets/img/flags/USA-flag.png" className="h-[30px] w-[30px]" onClick={() => setLanguage("en-us")}></img>
         </button>
         <i className="bi bi-repeat text-white relative text-xs right-4 bottom-1 cursor-pointer" onClick={() => setLanguage("en-us")}></i>
       </div>
@@ -19,7 +19,7 @@ const LanguageSwapBtn: React.FC = () => {
     : (
       <div className="absolute top-5 right-1 grayscale hover:grayscale-0">
         <button className=" rounded-full p-1" onClick={() => setLanguage("pt-br")}>
-          <img src="/img/flags/Brazil-flag.png" className="h-[30px] w-[30px]"></img>
+          <img src="src/assets/img/flags/Brazil-flag.png" className="h-[30px] w-[30px]"></img>
         </button>
         <i className="bi bi-repeat text-white relative text-xs right-4 bottom-1 cursor-pointer" onClick={() => setLanguage("en-us")}></i>
       </div>
